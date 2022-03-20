@@ -1,16 +1,18 @@
-
-import setPage from "../App/App"
+import Logo from "../Logo/Logo"
+import Deck from "../Deck/Deck"
 
 import logo from './../../assets/img/logo.png'
 
 import './initialPage.css'
 
-export default function InitialPage() {
+export default function InitialPage({callback}) {
     return(
         <>
+        <div className='initialPage'>
             <img src={logo}/>
             <h1>ZapRecall</h1>
-            <button onClick={setPage}>Iniciar Recall!</button>
+            <button onClick={() => callback(<><Logo /> <Deck/></>)}>Iniciar Recall!</button>
+        </div>
         </>
     )
 }
