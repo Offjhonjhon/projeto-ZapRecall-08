@@ -4,9 +4,9 @@ import './logo.css'
 
 export default function Logo() {
     return (
-        <div className="logo">
+        <header className="logo">
             <img src={logo}></img>
             <p>ZapRecall</p>
-        </div>
+        </header>
     );
 }
