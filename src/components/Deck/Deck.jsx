@@ -1,7 +1,6 @@
 import Card from "./../Card/Card"
 import './../Deck/deck.css'
 export default function Deck({ deck, updateNumCompleted, updateStatusIcon, updateZapAmount}) {
-    console.log(deck.deck);
     return (
         <div className="deck">
             {deck.deck.map(({ question, answer }, questionIndex) => {

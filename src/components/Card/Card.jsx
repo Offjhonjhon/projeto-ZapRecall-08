@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './../Deck/deck.css'
+import './card.css'
 import play from './../../assets/img/Vector.png'
 import curvedArrow from './../../assets/img/setinha.png'
 import red from './../../assets/img/red.png'

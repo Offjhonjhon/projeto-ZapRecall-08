@@ -4,7 +4,6 @@ import Deck from '../Deck/Deck';
 import Logo from '../Logo/Logo';
 import Bottom from '../Bottom/Bottom';
 
-
 import './../../css/style.css'
 import './../../css/reset.css'
 
@@ -16,7 +15,7 @@ export default function App() {
     const [statusIcons, setStatusIcon] = useState([])
     const [goalAndDeck, setGoalAndDeck] = useState({})
     const [zapAmount, setZapAmount] = useState(0)
-    let zapFinished = false
+    let finished = false
     return (
         <>
         {pageIndex === "first"? 
@@ -34,14 +33,14 @@ export default function App() {
                         updateZapAmount={updateZapAmount => setZapAmount(updateZapAmount + zapAmount)}
                     />
                 </main>
-                {/* <Bottom
+                <Bottom
                     numQuestions={goalAndDeck.deck.length}
                     numCompleted={numCompleted}
                     statusIcons={statusIcons}
-                    zapFinished={numCompleted === goalAndDeck.deck.length ? !zapFinished : zapFinished}
+                    finished={numCompleted === goalAndDeck.deck.length ? !finished : finished}
                     zapAmount={zapAmount}
                     goal={goalAndDeck.goal}
-                /> */}
+                />
             </> 
         } 
     </>
