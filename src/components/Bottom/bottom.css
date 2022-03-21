@@ -11,6 +11,9 @@ footer p {
     margin-top: 20px;
     font-family: 'Recursive';
 }
+footer p:first-of-type {
+    font-weight: 700;
+}
 .status-icon {
     gap: 5px;
     margin-top: 6px;
